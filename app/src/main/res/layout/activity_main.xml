@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:background="@drawable/img"
+        android:layout_margin="10dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintTop_toBottomOf="@id/vnez4"
+        app:layout_constraintStart_toStartOf="@id/vnez4"
+        app:layout_constraintEnd_toEndOf="@id/vnez4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        />
+
+    <TextView
+        android:id="@+id/regester"
+        android:layout_margin="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+<TextView
+    android:id="@+id/vniz"
+    android:textColor="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Username       Trivia"
+    android:textSize="19dp"
+    android:layout_margin="20dp"
+    app:layout_constraintTop_toBottomOf="@id/regester"
+    tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/vniz2"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="19dp"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@id/vniz"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/vniz3"
+    android:textColor="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Password"
+    android:textSize="19dp"
+    android:layout_margin="20dp"
+    app:layout_constraintTop_toBottomOf="@id/vniz2"
+    tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/vnez4"
+        android:layout_margin="12dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/regester"
+        app:layout_constraintStart_toStartOf="@id/regester"
+        app:layout_constraintTop_toBottomOf="@id/vniz3"
+        android:text="NEXT"  
+        android:layout_width="360dp"
+        app:cornerRadius="16dp"
+        android:padding="12dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trivia"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
